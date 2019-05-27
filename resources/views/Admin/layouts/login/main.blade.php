@@ -15,16 +15,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset(ASSET.'dist/css/AdminLTE.min.css')}}">
   <!-- iCheck -->
-  <link rel="stylesheet" href="{{asset(ASSET.'plugins/iCheck/square/blue.css')}}">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition login-page">
@@ -48,7 +39,6 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="{{asset(ASSET.'bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <!-- iCheck -->
-<script src="{{asset(ASSET.'plugins/iCheck/icheck.min.js')}}"></script>
 
 <script>
   $(function () {

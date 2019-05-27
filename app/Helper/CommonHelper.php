@@ -43,21 +43,23 @@ class CommonHelper {
     public static function get_banner(){
         $language =  session()->get('user');
         $language_id = $language['language'];
+        
         if($language_id == ''){
             $language_id = '1';
         }
          $slug =  \Request::path();
          
-        if($slug == '' || $slug == '/'){
+        if($slug == '' || $slug == '/' || $slug == 'test'){
             $slug = 'home';
         }
+        
         $result =  DB::table('banner')
                     ->select('*')
                     ->where('page_slug',$slug)
                     ->where('language_id',$language_id)
                     ->where('status',1)
                     ->get()->toarray();
-        
+       
         return $result;
     }
      public static function get_langauge_list(){

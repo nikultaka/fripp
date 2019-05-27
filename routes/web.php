@@ -18,7 +18,10 @@ Route::get('/blog', 'Frontend\BlogController@index');
 Route::get('/blog/{slug}', 'Frontend\BlogController@single_blog');
 Route::get('/blogs/{slug}', 'Frontend\BlogController@cat_blog');
 
-Route::get('', 'Frontend\CmsController@index');
+Route::get('', 'Frontend\HomeController@index');
+Route::get('gallery', 'Frontend\GalleryController@index');
+
+Route::get('test', 'Frontend\CmsController@test');
 
 /* Route::get('/', 'Frontend\HomeController@index');
   Route::get('/home', 'Frontend\HomeController@index');
@@ -76,6 +79,21 @@ Route::group(['prefix' => ADMIN], function() {
     Route::any('cms/edit/{id}', 'Admin\CmsController@edit');
     Route::any('cms/slug', 'Admin\CmsController@check_slug');
 //     CMS Routes End
+//     Media Upload
+    Route::get('media', 'Admin\MediaController@index');
+        Route::get('media/add', 'Admin\MediaController@add');
+        Route::any('media/get_category_data', 'Admin\MediaController@get_category_data');
+        Route::any('media/addrecord', 'Admin\MediaController@addrecord');
+        Route::any('media/edit', 'Admin\MediaController@editmedia');
+        Route::any('media/delete', 'Admin\MediaController@deleterecord');
+
+        Route::get('upload-media', 'Admin\UploadmediaController@index');
+
+        Route::any('upload-media/upload', 'Admin\UploadmediaController@upload');
+        Route::any('upload-media/videoupload', 'Admin\UploadmediaController@videoupload');
+        Route::any('upload-media/getdatatabel', 'Admin\UploadmediaController@getdatatable');
+        Route::any('upload-media/delete_media', 'Admin\UploadmediaController@delete_media');
+    // End Media
 //     Brand Routes Start
     Route::get('brand', 'Admin\BrandController@index');
     Route::get('brand/index', 'Admin\BrandController@index');

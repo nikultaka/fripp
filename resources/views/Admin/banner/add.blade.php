@@ -29,9 +29,10 @@
                                     <select class="form-control" id="page_name" name="page_name" data-validation="required">
                                         <option value="">select page</option>
                                         <option value="home">Home</option>
-                                        <option value="data">Data</option>
-                                        <option value="services">Services</option>
-                                        <option value="news">News</option>
+                                        <option value="about-us">About Us</option>
+                                        <option value="links">Links</option>
+                                        <option value="contact">Contact</option>
+                                        <option value="gallery">Gallery</option>
                                         <option value="-1">Other</option>
                                     </select>
                                     <input type="text" class="form-control" value="" name="add_page_name" id="add_page_name" style="display: none" />

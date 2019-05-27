@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/admin'),
+    'url' => env('APP_URL', 'http://localhost/fripp_laravel'),
 
     'asset_url' => env('ASSET_URL', null),
 

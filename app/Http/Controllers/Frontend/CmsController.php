@@ -10,8 +10,10 @@ class CmsController extends Controller
 {
     public function index($slug = null){
        if($slug == ''){
-         $slug = 'home';  
+         $slug =  \Request::path();
        }
+       
+       
         $languages = CommonHelper::user_selected_language_details();
         
        \App::setLocale($languages['sort_name']);
@@ -25,5 +27,8 @@ class CmsController extends Controller
         $data['cmsDetails'] = $cmsDetails;
         
         return view('Frontend.cms.index')->with($data);
+    }
+    public function test(){
+        return view('Frontend_back.home.test');
     }
 }

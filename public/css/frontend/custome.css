@@ -1,0 +1,92 @@
+.banner_btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: Transparent !important;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    border:1px solid white !important;
+    display:none !important;
+}
+.button {
+    display: block;
+    width: 250px;
+    height: 50px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.button:hover{
+    background-color:#000;
+}
+.banner_btn:hover{
+    background-color:#000 !important;
+}
+.button_menu{
+    position:relative;
+    left:25%;
+    bottom:0%;
+    width:150px !important;
+    display:none;
+
+
+}
+@media only screen and (max-width: 600px) {
+    .button_menu{
+        display:block;
+    }
+    .menu-item-661{
+        display:none !important;
+    }
+}
+@media only screen and (device-width: 768px) { 
+    .button_menu{
+        left:39%;
+        display:block;
+    }
+    .menu-item-661{
+        display:none !important;
+    }
+}
+.menu-item-661{
+    background-color:cadetblue;
+    border-radius:5px;
+    width:110px;
+}
+.menu-item-661:hover{
+    background-color:#000;
+}
+.menu-item-661 a{
+    color:#fff !important;
+    text-decoration:none !important;
+}
+@media only screen and (max-width: 600px) {
+    .menu-item-661{
+        width:150px;
+        position:relative;
+        left:30%;
+    }
+}
+
+.banner_btn {
+    background : black !important;
+}
+
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
