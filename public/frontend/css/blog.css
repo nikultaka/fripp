@@ -1,0 +1,70 @@
+.sidebar {
+    padding-left: 5em;
+}
+.sidebar-box {
+
+    margin-bottom: 4em;
+    font-size: 15px;
+    width: 100%;
+    float: left;
+    background: #fff;
+    margin-left: 25px;
+}
+.sidebar-box .heading {
+
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;}
+.post-entry-sidebar .post-meta {
+  font-size: 14px;
+  color: #b3b3b3; }
+
+.post-entry-sidebar ul {
+  padding: 0;
+  margin: 0; }
+  .post-entry-sidebar ul li {
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0; }
+    .post-entry-sidebar ul li a {
+      display: table; }
+      .post-entry-sidebar ul li a img {
+        width: 90px; }
+      .post-entry-sidebar ul li a img, .post-entry-sidebar ul li a .text {
+        display: table-cell;
+        vertical-align: middle; }
+      .post-entry-sidebar ul li a .text h4 {
+        font-size: 18px; }
+.categories, .sidelink {
+  padding: 0;
+  margin: 0;
+  font-weight: 400; }
+  .categories li, .sidelink li {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #dee2e6;
+    list-style: none; }
+    .categories li:last-child, .sidelink li:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0; }
+    .categories li a, .sidelink li a {
+      display: block;
+      font-size: 16px; }
+      .categories li a span, .sidelink li a span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #ccc;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+      .categories li a:hover span, .sidelink li a:hover span {
+        color: #000; }
+    .categories li.active a, .sidelink li.active a {
+      color: #000;
+      font-style: italic; }
