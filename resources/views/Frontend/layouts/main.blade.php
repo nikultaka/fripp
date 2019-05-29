@@ -60,11 +60,15 @@
         
 <script type='text/javascript' src="{{asset(ASSET.'js/frontend/contact-form-7/js/scripts1748.js?ver=5.0.5')}}"></script>
 <script type='text/javascript'>
+    
 /* <![CDATA[ */
 var photozoomStrings = {"slicknav_menu_home":"Click for Menu"};
 /* ]]> */
 </script>
 <script type='text/javascript' src="{{asset(ASSET.'js/frontend/photozoom/js/photozoomdc27.js?ver=20180914')}}"></script>
 <script type='text/javascript' src="{{asset(ASSET.'js/frontend/wp-embed.min5560.js?ver=5.0.4')}}"></script>
-</body>
+<script>
+
+</script>
+    </body>
 </html>

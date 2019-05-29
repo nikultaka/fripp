@@ -132,6 +132,22 @@
                             </tr>
                             <tr>
                               <td align="left" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;">
+                                Date : 
+                              </td>
+                              <td align="right" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;">
+                                {{$date}}
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;">
+                                Subject : 
+                              </td>
+                              <td align="right" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;">
+                                {{$subject}}
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;">
                                 Message : 
                               </td>
                               <td align="right" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;">

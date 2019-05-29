@@ -33,6 +33,13 @@
                                         <option value="links">Links</option>
                                         <option value="contact">Contact</option>
                                         <option value="gallery">Gallery</option>
+                                        <option value="services">Services</option>
+                                        <option value="gallery/couples">Services/Couples</option>
+                                        <option value="gallery/families">Services/Families</option>
+                                        <option value="gallery/graduating-seniors">Services/Graduating Seniors</option>
+                                        <option value="gallery/reunions">Services/Reunions</option>
+                                        <option value="gallery/little-ones">Services/Little Ones</option>
+                                        
                                         <option value="-1">Other</option>
                                     </select>
                                     <input type="text" class="form-control" value="" name="add_page_name" id="add_page_name" style="display: none" />

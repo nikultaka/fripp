@@ -12,23 +12,10 @@
          
         </div>
       </div>
-      <!-- search form -->
-<!--      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>-->
-      <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
 
-        <!--<li><a href="{{url(ADMIN_DASHBOARD)}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>-->
-<!--        <li><a href="{{url(ADMIN.'/user')}}"><i class="fa fa-user"></i> <span>User</span></a></li>-->
         <li class="treeview">
           <a href="#">
             <i class="fa fa-tasks"></i>
@@ -42,32 +29,6 @@
             <li><a href="{{url(ADMIN.'/cms/list')}}"><i class="fa fa-circle-o"></i>CMS List</a></li>
           </ul>
         </li>
-<!--        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-tasks"></i>
-            <span>Brand</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{url(ADMIN.'/brand')}}"><i class="fa fa-circle-o"></i>Brand</a></li>
-            <li><a href="{{url(ADMIN.'/brand/list')}}"><i class="fa fa-circle-o"></i>Brand List</a></li>
-          </ul>
-        </li>-->
-<!--        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-newspaper-o"></i>
-            <span>News</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{url(ADMIN.'/news')}}"><i class="fa fa-circle-o"></i>News</a></li>
-            <li><a href="{{url(ADMIN.'/news/list')}}"><i class="fa fa-circle-o"></i>News List</a></li>
-          </ul>
-        </li>-->
         <li class="treeview">
           <a href="#">
             <i class="fa fa-newspaper-o"></i>
@@ -81,20 +42,7 @@
             <li><a href="{{url(ADMIN.'/blog/list')}}"><i class="fa fa-circle-o"></i>Blog List</a></li>
           </ul>
         </li>
-        <li><a href="{{url(ADMIN.'/language')}}"><i class="fa fa-user"></i> <span>Language</span></a></li>
-<!--        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-newspaper-o"></i>
-            <span>Infographics</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{url(ADMIN.'/infographics')}}"><i class="fa fa-circle-o"></i>Infographics</a></li>
-            <li><a href="{{url(ADMIN.'/infographics/list')}}"><i class="fa fa-circle-o"></i>Infographics List</a></li>
-          </ul>
-        </li>-->
+        
         <li class="treeview">
           <a href="#">
             <i class="fa fa-newspaper-o"></i>
@@ -108,70 +56,15 @@
             <li><a href="{{url(ADMIN.'/subcategory')}}"><i class="fa fa-circle-o"></i>Sub Category</a></li>
           </ul>
         </li>
-<!--        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-tasks"></i>
-            <span>Reports</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{url(ADMIN.'/reports')}}"><i class="fa fa-circle-o"></i>Reports</a></li>
-            <li><a href="{{url(ADMIN.'/reports/list')}}"><i class="fa fa-circle-o"></i>Reports List</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-tasks"></i>
-            <span>Dataset</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{url(ADMIN.'/dataset')}}"><i class="fa fa-circle-o"></i>Dataset</a></li>
-            <li><a href="{{url(ADMIN.'/dataset/list')}}"><i class="fa fa-circle-o"></i>Dataset List</a></li>
-          </ul>
-        </li>-->
+
         <li><a href="{{url(ADMIN.'/banner')}}"><i class="fa fa-flag"></i> <span>Banner</span></a></li>
         <li><a href="{{url(ADMIN.'/advancesettings')}}"><i class="fa fa-wrench"></i> <span>Settings</span></a></li>
-<!--        <li><a href="{{url(ADMIN.'/testimonial')}}"><i class="fa fa-quote-left"></i> <span>Testimonial</span></a></li>-->
-<!--        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-question-circle"></i>
-            <span>Faq</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{url('admin/faq')}}"><i class="fa fa-circle-o"></i>Faq </a></li>
-            <li><a href="{{url('admin/faq_category')}}"><i class="fa fa-circle-o"></i>Faq Category </a></li>
-          </ul>
-        </li>-->
+
         
         
+        <li><a href="{{url(ADMIN.'/contact')}}"><i class="fa fa-phone"></i> <span>Contact us</span></a></li>
         
-<!--        <li><a href="{{url('admin/contact_us')}}"><i class="fa fa-phone"></i> <span>Contact us</span></a></li>
-        
-        <li><a href="{{url('admin/newsletter')}}"><i class="fa fa-newspaper-o"></i> <span>Newsletter</span></a></li>-->
-        
-<!--        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-wrench"></i>
-            <span>Settings</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{url('admin/setting')}}"><i class="fa fa-circle-o"></i>General Settings</a></li>
-            <li><a href="{{url(ADMIN.'/advancesettings')}}"><i class="fa fa-circle-o"></i>Advance Custom Fields</a></li>
-          </ul>
-        </li>-->
-        
-<!--        <li class="treeview">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-medium"></i>
             <span>Media</span>
@@ -180,15 +73,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{url('admin/media')}}"><i class="fa fa-circle-o"></i>Media Category</a></li>
-            <li><a href="{{url('admin/upload-media')}}"><i class="fa fa-circle-o"></i>Media Upload</a></li>
+            <li><a href="{{url(ADMIN.'/media')}}"><i class="fa fa-circle-o"></i>Media Category</a></li>
+            <li><a href="{{url(ADMIN.'/upload-media')}}"><i class="fa fa-circle-o"></i>Media Upload</a></li>
           </ul>
         </li>
-        
-        <li><a href="{{url('admin/bullet')}}"><i class="fa fa-list-alt"></i> <span>Bullet</span></a></li>
-        
-        <li><a href="{{url('admin/product')}}"><i class="fa fa-product-hunt"></i> <span>Product</span></a></li>
-        -->
+
         <li><a href="{{ url(ADMIN_LOGOUT)}}"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
 
       </ul>

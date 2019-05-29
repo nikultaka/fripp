@@ -13,6 +13,7 @@ frontend.common = {
                 }
             })
         });
+       
         
     },
     get_csrf_token_value:function(){
@@ -34,6 +35,7 @@ frontend.common = {
         data = $('#msg_main').attr('style', 'color:green;');;
         data = setTimeout(function(){ $('#msg_main').hide(); }, 3000);
         return data;
-    }
+    },
+    
     
 };

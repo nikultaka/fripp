@@ -1469,7 +1469,7 @@ div.divider {
   display: inline-block;
   margin: 0 3.125% 60px 0;
   vertical-align: top;
-  width: 31.25%; }
+  width: 29.25%; }
 
 .site-archive-posts-3 .site-archive-post-3 {
   margin-right: 0; }
@@ -1500,8 +1500,8 @@ div.divider {
 .ilovewp-featured-pages-list .ilovewp-featured-page-item {
   display: inline-block;
   float: none;
-  margin-right: 3.125%;
-  vertical-align: top;
+  margin-right: 2.125%;
+  vertical-align: top; 
   width: 31.25%; }
 
 .ilovewp-featured-pages-list .ilovewp-featured-page-item:last-of-type {

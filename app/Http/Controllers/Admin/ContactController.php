@@ -177,19 +177,16 @@ class ContactController extends Controller {
             $msg = $post['reply'];
             $data = array('msg' => $msg);
 
-            if (Mail::send('email.admin_to_user_replay', $data, function($message) use ($email, $subject) {
+            Mail::send('email.admin_to_user_replay', $data, function($message) use ($email, $subject) {
                         $message->to($email)->subject
                                 ($subject);
                         $message->from(USER_EMAIL, USER_NAME);
-                    })) {
+                    });
                 $data_result['status'] = 1;
                 $data_result['msg'] = "Email Sent.!";
-            } else {
-                $data_result['status'] = 0;
-                $data_result['msg'] = "Please Try after some time.";
-            }
+            
         }
-        echo json_encode($json_data);
+        echo json_encode($data_result);
         exit(0);
     }
 

@@ -18,6 +18,7 @@ class BlogController extends Controller
                 ->where('b.language_id', $lang_id)
                 ->get()->toarray();
         $data['blogs'] = $blogs;
+        $data['slug'] = 'blog';
         
         return view('Frontend.blog.index')->with($data);
     }
@@ -45,7 +46,7 @@ class BlogController extends Controller
                     ->where('sc.language_id', $lang_id)
                     ->where('c.status', '!=', -1)
                     ->get()->toarray();
-        
+        $data['slug'] = 'blog';
         $data['blog'] = $blogs;
         $data['latest_posts'] = $latest_post;
          $data['categorys'] = $categorys;
@@ -61,6 +62,7 @@ class BlogController extends Controller
                 ->where('c.name', $slug)
                 ->get()->toarray();
         $data['blogs'] = $blogs;
+        $data['slug'] = 'blog';
         
         return view('Frontend.blog.index')->with($data);
     }

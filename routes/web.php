@@ -20,34 +20,8 @@ Route::get('/blogs/{slug}', 'Frontend\BlogController@cat_blog');
 
 Route::get('', 'Frontend\HomeController@index');
 Route::get('gallery', 'Frontend\GalleryController@index');
+Route::get('gallery/{slug}', 'Frontend\GalleryController@gallery');
 
-Route::get('test', 'Frontend\CmsController@test');
-
-/* Route::get('/', 'Frontend\HomeController@index');
-  Route::get('/home', 'Frontend\HomeController@index');
-  Route::get('/dataset', 'Frontend\DatasetController@index');
-  Route::get('/dataset/{id}', 'Frontend\DatasetController@datasetdetails');
-
-  //Data page Start
-  Route::get('/data', 'Frontend\HomeController@index');
-  //Data page End
-  // User Routes Start
-  Route::get('/login', 'Frontend\UserController@login');
-  Route::post('/login', 'Frontend\UserController@user');
-  Route::get('/register', 'Frontend\UserController@register');
-  Route::any('register/add', 'Frontend\UserController@add_user');
-  Route::get('profile', 'Frontend\UserController@profile');
-  // User Routes End
-  //FrontEnd End
-  Route::get('news', 'Frontend\NewsController@index');
-
-  Route::get('reports', 'Frontend\ReportsController@index');
-
-  Route::get('news/{id}', 'Frontend\NewsController@news_info');
-  Route::get('/logout', function(){
-  Auth::logout();
-  return Redirect::to('/');
-  }); */
 // BackEnd Start
 Route::group(['prefix' => ADMIN], function() {
     Route::get('/', function() {
@@ -94,26 +68,6 @@ Route::group(['prefix' => ADMIN], function() {
         Route::any('upload-media/getdatatabel', 'Admin\UploadmediaController@getdatatable');
         Route::any('upload-media/delete_media', 'Admin\UploadmediaController@delete_media');
     // End Media
-//     Brand Routes Start
-    Route::get('brand', 'Admin\BrandController@index');
-    Route::get('brand/index', 'Admin\BrandController@index');
-    Route::any('brand/add', 'Admin\BrandController@add');
-    Route::any('brand/list', 'Admin\BrandController@brand_list');
-    Route::any('brand/getdata', 'Admin\BrandController@brand_data_table');
-    Route::any('brand/delete', 'Admin\BrandController@delete');
-    Route::any('brand/edit/{id}', 'Admin\BrandController@edit');
-    Route::any('brand/slug', 'Admin\BrandController@check_slug');
-//     Brand Routes End
-//     news Routes Start
-    Route::get('news', 'Admin\NewsController@index');
-    Route::get('news/index', 'Admin\NewsController@index');
-    Route::any('news/add', 'Admin\NewsController@add');
-    Route::any('news/list', 'Admin\NewsController@news_list');
-    Route::any('news/getdata', 'Admin\NewsController@news_data_table');
-    Route::any('news/delete', 'Admin\NewsController@delete');
-    Route::any('news/edit/{id}', 'Admin\NewsController@edit');
-    Route::any('news/slug', 'Admin\NewsController@check_slug');
-//     news Routes End
 //     category Routes Start
     Route::get('/category', 'Admin\CategoryController@index');
     Route::post('/category/add', 'Admin\CategoryController@add');
@@ -131,46 +85,6 @@ Route::group(['prefix' => ADMIN], function() {
     Route::post('/subcategory/delete', 'Admin\SubcategoryController@delete');
     Route::post('/subcategory/gettable', 'Admin\SubcategoryController@subcategory_data_table');
 //     sub category Routes End
-//     CMS Routes Start
-    Route::get('reports', 'Admin\ReportsController@index');
-    Route::get('reports/index', 'Admin\ReportsController@index');
-    Route::any('reports/add', 'Admin\ReportsController@add');
-    Route::any('reports/list', 'Admin\ReportsController@reports_list');
-    Route::any('reports/getdata', 'Admin\ReportsController@reports_data_table');
-    Route::any('reports/delete', 'Admin\ReportsController@delete');
-    Route::any('reports/edit/{id}', 'Admin\ReportsController@edit');
-
-    // Testimonial start
-    // 
-    Route::get('testimonial', 'Admin\TestimonialController@index');
-    Route::any('testimonial/addrecord', 'Admin\TestimonialController@addrecord');
-    Route::any('testimonial/getdata', 'Admin\TestimonialController@anydata')->name('testimonial/getdata');
-    Route::any('testimonial/delete', 'Admin\TestimonialController@deleterecord');
-    Route::any('testimonial/edit', 'Admin\TestimonialController@edittestimonial');
-    // Testimonial End
-//    Route::any('reports/slug', 'Admin\ReportsController@check_slug');
-//     CMS Routes End    
-//     Infographics Routes Start
-    Route::get('infographics', 'Admin\InfographicsController@index');
-    Route::get('infographics/index', 'Admin\InfographicsController@index');
-    Route::any('infographics/add', 'Admin\InfographicsController@add');
-    Route::any('infographics/list', 'Admin\InfographicsController@news_list');
-    Route::any('infographics/getdata', 'Admin\InfographicsController@infographics_data_table');
-    Route::any('infographics/delete', 'Admin\InfographicsController@delete');
-    Route::any('infographics/edit/{id}', 'Admin\InfographicsController@edit');
-//     Infographics Routes End
-//     
-//     Dataset Routes Start
-    Route::get('dataset', 'Admin\DatasetController@index');
-    Route::get('dataset/index', 'Admin\DatasetController@index');
-    Route::any('dataset/add', 'Admin\DatasetController@add');
-    Route::any('dataset/list', 'Admin\DatasetController@reports_list');
-    Route::any('dataset/getdata', 'Admin\DatasetController@dataset_data_table');
-    Route::any('dataset/delete', 'Admin\DatasetController@delete');
-    Route::any('dataset/edit/{id}', 'Admin\DatasetController@edit');
-//    Route::any('reports/slug', 'Admin\ReportsController@check_slug');
-//    
-//    
 //    
     // Advance Custom Filds Section Routes Start
     Route::get('advancesettings', 'Admin\AdvancesettingController@index');

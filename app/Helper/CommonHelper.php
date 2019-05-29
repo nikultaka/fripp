@@ -49,7 +49,7 @@ class CommonHelper {
         }
          $slug =  \Request::path();
          
-        if($slug == '' || $slug == '/' || $slug == 'test'){
+        if($slug == '' || $slug == '/'){
             $slug = 'home';
         }
         

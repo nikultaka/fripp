@@ -25,7 +25,7 @@ class CmsController extends Controller
                 ->get()->toarray();
         $data = array();
         $data['cmsDetails'] = $cmsDetails;
-        
+        $data['slug'] = $slug;
         return view('Frontend.cms.index')->with($data);
     }
     public function test(){

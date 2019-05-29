@@ -28,7 +28,8 @@ class ContactController extends Controller
         $languages = CommonHelper::user_selected_language_details();
         
        \App::setLocale($languages['sort_name']);
-        return view('Frontend.contact.index');
+       $data['slug'] = 'contact';
+        return view('Frontend.contact.index')->with($data);
     }
     public function contact(Request $request){
         $post = $request->input();
@@ -37,19 +38,21 @@ class ContactController extends Controller
 
         if (!empty($post)) {
             $post = $request->input();
-            $insert_data['name'] = $post['name'];
-            $insert_data['email'] = $post['email'];
-            $insert_data['phone_no'] = $post['Phone'];
-            $insert_data['description'] = $post['message'];
+            $insert_data['name'] = $post['your-name'];
+            $insert_data['email'] = $post['your-email'];
+            $insert_data['phone_no'] = $post['tel-8'];
+            $insert_data['description'] = $post['your-message'];
+            $insert_data['date'] = $post['date-971'];
+            $insert_data['subject'] = $post['your-subject'];
             $insert_data['status'] = 1;
             $insert_data['created_at'] = date("Y-m-d h:i:s");
             
             if (DB::table('contact')->insert($insert_data)) {
-                if (Mail::send('email.contact', $insert_data, function($message){
+                Mail::send('email.contact', $insert_data, function($message){
                             $message->to(USER_EMAIL)->subject
                                     (USER_SUBJECT);
                             $message->from(USER_EMAIL, USER_NAME);
-                        })) {
+                        });
                     $data_result['status'] = 1;
                     $data_result['msg'] = "Email Sent.!";
                 } 
@@ -57,7 +60,7 @@ class ContactController extends Controller
 
             
             
-        }
+        
         echo json_encode($data_result);
         exit(0);
     }
